@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Management - Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title-queue">Let me Queue!</h1>
+    <div class="body-content">
+        <section class="input-section">
+            <div class="title-field">
+                <h3 class="input-head">Title</h3>
+                <input class="input-field-box" type="text" id="titleInput"placeholder="Fill your title" >
+            </div>
+            <div class="subtitle-field">
+                <h3 class="input-head">Subtitle</h3>
+                <input class="input-field-box" type="text" id="subtitleInput" placeholder="Fill your subtitle" >
+            </div>
+            <div class="description-field">
+                <h3 class="input-head">Description</h3>
+                <textarea class="input-field-box" id="descriptionInput" placeholder="Fill your description" ></textarea>
+            </div>            
+            <div class="input-button-container">
+                <button class="input-button" id="launchBtn">Launch</button>
+                <button class="input-edit-button">Edit</button>
+            </div>
+        </section>
+        <section class="queue-section">
+            <div class="queue-preview">
+                <div class="next-in-line-queue-box">
+                    <h4 class="queue-box-head">Next in Line</h4>
+                    <div class="next-in-line-queue-num">
+                        <p id="nextInLine">00</p>
+                    </div>
+                    <div class="line-queue-edit">
+                        <button class="icon-button" id="editNextInLine">
+                            <i class="material-icons">edit_square</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="interviewing-queue-box">
+                    <h4 class="queue-box-head">Interviewing</h4>
+                    <div class="interviewing-num">
+                        <p id="interviewing">00</p>
+                    </div>
+                    <div class="int-queue-edit">
+                        <button class="icon-button" id="editInterviewing">
+                            <i class="material-icons">edit_square</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="queue-list-head">
+                <h2>Queue List</h2>
+                <input type="text" class="queue-input" placeholder="Enter queue number" id="queueInput">
+                <button class="queue-add" id="addQueueBtn">
+                    <i class="material-icons">add_circle</i>
+                </button>
+            </div>
+
+            <div class="queue-list">
+                <ul id="queueList"></ul>
+            </div>
+        </section>
+        <section class="setting-section">
+            <div class="timer-container">
+                <h2 class="setting-head">Time</h2>
+                <div id="timerDisplay">00:00:00</div>
+                <div class="time-button">
+                    <button id="startBtn">
+                        <i class="material-icons">play_arrow</i>
+                    </button>
+                    <button id="stopBtn">
+                        <i class="material-icons">stop</i>
+                    </button>
+                    <button id="resetBtn">
+                        <i class="material-icons">replay</i>
+                    </button>
+                </div>
+            </div>
+            <div class="breaktime">
+                <h2 class="setting-head">Break</h2>
+                <label class="break-switch">
+                    <input type="checkbox" id="breakSwitch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </section>
+    </div>
+ <script src="scripts.js"></script>
+
+</body>
+</html>
+
