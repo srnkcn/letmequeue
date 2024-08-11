@@ -611,7 +611,7 @@ input:checked + .slider:before {
     text-align:center;
 }
 
-footer {
+.credit {
     font-family: "Roboto Mono";
     color:#b3a6f2;
     background: #0a0326;
