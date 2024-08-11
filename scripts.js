@@ -169,7 +169,7 @@ function updateScreenQueue() {
 
 
 function playSound() {
-    const audio = new Audio('C:/Users/sirin/queue management/ding-36029.mp3');
+    const audio = new Audio('ding-36029.mp3');
     console.log('Sound should play now');// Update the path to your sound file
     audio.play();
 }

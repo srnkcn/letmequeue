@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize sound notification
     function playSound() {
-        const audio = new Audio('C:/Users/sirin/queue management/ding-36029.mp3'); // Update the path to your sound file
+        const audio = new Audio('ding-36029.mp3'); // Update the path to your sound file
         audio.play().catch(error => console.error('Audio play failed:', error));
     }
 

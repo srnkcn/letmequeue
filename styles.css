@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 .roboto-mono-<uniquifier> {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -607,4 +609,28 @@ input:checked + .slider:before {
     color: #f9f8fe; /* Optional: Change text color to white for better contrast */
     width: 150px;
     text-align:center;
+}
+
+footer {
+    font-family: "Roboto Mono";
+    color:#b3a6f2;
+    background: #0a0326;
+    height: 30px;
+    font-size: 11px;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    font-family: "Roboto Mono";
+    color: #e8f5e9;
+    transition:  300ms ease;
+    &:hover {
+        text-decoration: solid 2px;
+
+    }
 }
