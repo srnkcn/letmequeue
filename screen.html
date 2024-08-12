@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Management - Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--User interface-->
+
+<div class="title-head-content">
+    <div class="screen-queue-title">
+        <h1 class="screen-title">Interviewing</h1>
+        <div class="screen-queue-subtitle">
+            <h4 class="screen-subtitle">Status</h4>
+        </div>
+    </div>
+    <div class="time-break">
+        <div id="timerDisplay">00:00:00</div>
+    </div>
+</div>
+
+<div class="body-content">
+    <section class="readme-section">
+        <div class="head-read-section">
+            <h3 class="readme-head">Read Me</h3>
+        </div>
+        <div class="description-content">
+            <p class="description-text"></p>
+        </div>
+    </section>
+
+<section class="queue-screen">
+    <div class="next-in-line-queue-box">
+        <h4 class="queue-box-head">Next in Line</h4>
+        <div class="next-in-line-queue-num"><p id="scr-nil"></p></div>
+    </div>
+    <div class="interviewing-queue-box">
+        <h4 class="queue-box-head">Interviewing</h4>
+        <div class="interviewing-num"><p id="scr-int"></p></div>
+    </div>
+</section>
+</div>
+<script src="screen.js"></script>
+
+</body>
+<footer>
+    <div class="credit">
+        <p>this work is created and confused by srnkcn and thank the sound by pixabay</p>
+    </div>
+</footer>
+</html>
